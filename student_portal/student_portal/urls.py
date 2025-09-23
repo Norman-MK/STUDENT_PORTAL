@@ -16,12 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from student_portal.views import home, about
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-from dashboard import views
+from student_portal import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
